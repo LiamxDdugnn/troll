@@ -3,13 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const flowerContainer = document.getElementById("flowerContainer");
     const greetingMessage = document.getElementById("greetingMessage");
 
-    // Đảm bảo hoa hiển thị đúng
-    flowerContainer.style.display = "flex";
-    greetingMessage.style.display = "block";
-
     openButton.addEventListener("click", function () {
         flowerContainer.classList.remove("hidden");
+        flowerContainer.style.display = "flex";
         greetingMessage.classList.remove("hidden");
+        greetingMessage.style.display = "block";
         openButton.style.display = "none";
     });
 });
