@@ -13,7 +13,7 @@
     }
 
     .main {
-        background: url('imgs/img.png') no-repeat -1150px -2px;
+        background: url('https://i.imgur.com/rYVjZuw.png') no-repeat -1150px -2px;
         width: 771px;
         height: 507px;
         margin:auto;
@@ -21,7 +21,7 @@
         text-align: center;
     }
     .xiu {
-        background: url('imgs/img.png') no-repeat -343px -867px;
+        background: url('https://i.imgur.com/rYVjZuw.png') no-repeat -343px -867px;
         width: 130px;
         height: 74px;
         position: absolute;
@@ -30,7 +30,7 @@
         animation: zoomout 0.2s ease-in-out infinite alternate;
     }
     .tai {
-        background: url('imgs/img.png') no-repeat -1290px -870px;
+        background: url('https://i.imgur.com/rYVjZuw.png') no-repeat -1290px -870px;
         width: 108px;
         height: 68px;
         position: absolute;
@@ -39,7 +39,7 @@
         animation: zoomout 0.2s ease-in-out infinite alternate;
     }
     .user {
-        background: url('imgs/img.png') no-repeat -1970px -416px;
+        background: url('https://i.imgur.com/rYVjZuw.png') no-repeat -1970px -416px;
         width: 26px;
         height: 34px;
         position: absolute;
@@ -47,7 +47,7 @@
         top: 380px;
     }
     .dragon {
-        background: url('imgs/img.png') no-repeat -1538px -514px;
+        background: url('https://i.imgur.com/rYVjZuw.png') no-repeat -1538px -514px;
         width: 317px;
         height: 309px;
         position: absolute;
@@ -97,7 +97,7 @@
         position: absolute;
     }
     .dice1{
-        background: url('imgs/dice.png') no-repeat -507px -2px;
+        background: url('https://i.imgur.com/46Y90aJ.png') no-repeat -507px -2px;
         width: 98px;
         height: 96px;
         transform: scale(0.8) rotate(-20deg);
@@ -106,7 +106,7 @@
         opacity: 0;
     }
     .dice2{
-        background: url('imgs/dice.png') no-repeat -404px -3px;
+        background: url('https://i.imgur.com/46Y90aJ.png') no-repeat -404px -3px;
         width: 98px;
         height: 96px;
         transform: scale(0.8) rotate(20deg);
@@ -115,7 +115,7 @@
         opacity: 0;
     }
     .dice3{
-        background: url('imgs/dice.png') no-repeat 0 -2px;
+        background: url('https://i.imgur.com/46Y90aJ.png') no-repeat 0 -2px;
         width: 98px;
         height: 96px;
         transform: scale(0.8) rotate(10deg);
@@ -124,7 +124,7 @@
         opacity: 0;
     }
     .khung {
-        background: url('imgs/img.png') no-repeat -1107px -828px;
+        background: url('https://i.imgur.com/le3uWYi.png') no-repeat -1107px -828px;
         width: 179px;
         height: 45px;
         transform: scale(0.6);
@@ -220,7 +220,7 @@ gameOver = function(dice){
     roll = document.getElementById("roll");
     document.getElementById('dragon').style.webkitAnimationPlayState = 'paused'; 
     roll.src = "";
-    roll.src = 'imgs/roll1.gif';
+    roll.src = '/roll1.gif';
     roll.style.opacity = 1;
     setTimeout(()=>{
         roll.style.opacity = 0;
@@ -238,9 +238,9 @@ showDice = function(dice1,dice2,dice3){
         5: '-404px -3px',
         6: '-507px -2px',
     };
-    d1.style.background = "url('imgs/dice.png') no-repeat "+ dice[dice1];
-    d2.style.background = "url('imgs/dice.png') no-repeat "+ dice[dice2];
-    d3.style.background = "url('imgs/dice.png') no-repeat "+ dice[dice3];
+    d1.style.background = "url('https://i.imgur.com/46Y90aJ.png') no-repeat "+ dice[dice1];
+    d2.style.background = "url('https://i.imgur.com/46Y90aJ.png') no-repeat "+ dice[dice2];
+    d3.style.background = "url('https://i.imgur.com/46Y90aJ.png') no-repeat "+ dice[dice3];
     d1.style.opacity = 1;
     d2.style.opacity = 1;
     d3.style.opacity = 1;
