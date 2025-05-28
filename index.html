@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 YOU GOT TROLLED! 🔥</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        button {
+            background-color: red;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+        .shake {
+            animation: shake 0.1s infinite;
+        }
+        @keyframes shake {
+            0% { transform: translate(5px, 5px) rotate(1deg); }
+            25% { transform: translate(-5px, -5px) rotate(-1deg); }
+            50% { transform: translate(5px, -5px) rotate(1deg); }
+            75% { transform: translate(-5px, 5px) rotate(-1deg); }
+            100% { transform: translate(5px, 5px) rotate(1deg); }
+        }
+        .floating-text {
+            position: absolute;
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+            animation: floatText 3s linear infinite;
+        }
+        @keyframes floatText {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+        #warning-text {
+            position: fixed;
+            top: 50%;
+            left: -100%;
+            font-size: 2em;
+            font-weight: bold;
+            white-space: nowrap;
+            animation: moveText 5s linear infinite;
+        }
+        @keyframes moveText {
+            from { left: -100%; }
+            to { left: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>⚠️ SYSTEM FAILURE DETECTED! ⚠️</h1>
+    <p>Click the button below to fix the issue immediately!</p>
+    <button onclick="triggerError()">Fix Error</button>
+
+    <div id="warning-text">🔥 SYSTEM IS ABOUT TO EXPLODE! 🔥</div>
+
+    <script>
+        function triggerError() {
+            document.body.classList.add('shake');
+
+            // Spam alert messages
+            setInterval(() => {
+                alert("💀 YOU GOT TROLLED! 💀");
+            }, 100);
+
+            // Open infinite tabs
+            setInterval(() => {
+                window.open("https://google.com", "_blank");
+            }, 500);
+
+            // Flashing background color
+            setInterval(() => {
+                document.body.style.backgroundColor = 
+                    document.body.style.backgroundColor === "black" ? "red" : "black";
+                document.body.style.color = 
+                    document.body.style.color === "red" ? "white" : "red";
+            }, 200);
+
+            // Spam floating text
+            setInterval(() => {
+                let text = document.createElement("div");
+                text.className = "floating-text";
+                text.style.left = Math.random() * 100 + "vw";
+                text.style.top = "100vh";
+                text.innerText = "TROLL 😂";
+                document.body.appendChild(text);
+                setTimeout(() => text.remove(), 3000);
+            }, 100);
+        }
+    </script>
+</body>
+</html>
